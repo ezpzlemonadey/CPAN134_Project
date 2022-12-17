@@ -8,20 +8,20 @@
     <body>
         <center>
         <h1 >Subscription</h1>
-        <form name="Subscription_Form" id="subs_form">
+        <form name="Subscription_Form" id="subs_form" action="../Pages/Home.html" method="get">
             <table>
                 <tr><td><strong>User Information</strong></td></tr>
                 <tr>
                     <td><label for="email">Email:</label></td>
-                    <td><input type="email" id="email" name="email" required></td>
+                    <td><input type="email" id="email" name="email" ></td>
                 </tr>
                 <tr>
                     <td><label for="fname">First Name:</label></td>
-                    <td><input type="text" id="fname" name="fname"></td>
+                    <td><input type="text" id="fname" name="fname" ></td>
                 </tr>
                 <tr>
                     <td><label for="lname">Last Name:</label></td>
-                    <td><input type="text" id="lname" name="lname"></td>
+                    <td><input type="text" id="lname" name="lname" ></td>
                 </tr>
                 
                 <tr><td><strong>Email Notification Preference</strong></td></tr>
@@ -36,7 +36,7 @@
                     <label for="email_notif2"> Receive notifications on Special Contents, Surveys, and Promotional Offers to the email I provided.</label><br>
                 </tr>
                 <tr>
-                    <input type="submit" name="btnSubmit" onclick="SubmitForm()" value="Submit">
+                    <input type="submit" onclick="return SubmitForm()" name="btnSubmit" value="Submit">
                     <input type="reset" name="btnReset" value="Reset Fields">
                 </tr>
             </table>
